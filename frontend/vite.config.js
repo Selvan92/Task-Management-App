@@ -8,8 +8,8 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        // target: 'http://localhost:8000',
-        target: 'https://git.heroku.com/eerie-skeleton-50764.git'
+         target: 'http://localhost:8000',
+       //  target: 'https://git.heroku.com/eerie-skeleton-50764.git'
       },
     },
   },
