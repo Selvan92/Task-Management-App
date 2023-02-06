@@ -22,6 +22,8 @@ export default function Navbar() {
     getUser();
   }, []);
 
+  if (!user) return null;
+
   const handleLogout = async () => {
     try {
       await axios.get('/api/auth/logout');
@@ -32,8 +34,6 @@ export default function Navbar() {
       console.log(err);
     }
   };
-
-  if (!user) return null;
 
   return (
     <header>
