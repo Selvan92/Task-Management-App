@@ -4,7 +4,7 @@
     "description": "",
     "main": "backend/index.js",
     "scripts": {
-        "start": "node backend/index.js",
+        "start": "cd backend && npm start",
         "develop": "concurrently \"cd backend && npm run start\" \"cd frontend && npm start\"",
         "install": "cd backend && npm i && cd ../frontend && npm i",
         "seed": "cd backend && npm run seed",
