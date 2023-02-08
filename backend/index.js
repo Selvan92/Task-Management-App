@@ -5,6 +5,12 @@ import morgan from 'morgan';
 import cookieParser from 'cookie-parser';
 import cors from 'cors';
 import allRoutes from './routes/index.js';
+import path from 'path' ;
+
+import { dirname } from 'path';
+import { fileURLToPath } from 'url';
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
 const app = express();
 const PORT = process.env.PORT || 8000;
@@ -26,8 +32,13 @@ app.use((err, req, res, next) => {
   return res.status(status).json({ message, stack: err.stack });
 });
 
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../frontend/dist/index.html'));
+});
+
 const connectDB = async () => {
   try {
+    console.log(process.env.DB_CONNECTION_STRING)
     await mongoose.connect(process.env.DB_CONNECTION_STRING);
     console.log('MongoDB Connected');
   } catch (err) {
