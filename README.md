@@ -43,7 +43,7 @@ A fully fledged task management software which was built for easy user friendly 
   
  ### Steps
 
-1. `git clone` or `Download ZIP` this repo `https://github.com/the-coding-pie/workflow.git`
+1. `git clone` or `Download ZIP` this repo `https://github.com/Selvan92/Task-Management-App`
 2. Now `cd` into the root directory (ie, Task-Management-App): 
  
 ``` bash
