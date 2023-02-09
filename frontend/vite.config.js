@@ -8,8 +8,8 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        
-         target: 'https://eerie-skeleton-50764.herokuapp.com/'
+         target: 'http://localhost:8000',
+     
      },
    },
   },
@@ -22,7 +22,7 @@ export default defineConfig({
     //     input: '/path/to/index.js',
     //   },
     // },
-    // target: 'http://localhost:8000',
+    
   
 });
 
