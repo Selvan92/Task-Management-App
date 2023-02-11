@@ -14,6 +14,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 
 const app = express();
 const PORT = process.env.PORT || 8000;
+const CLIENT_URL_STRING = process.env.CLIENT_URL || 'http://localhost:3000';
 
 // middleware
 app.use(cors());
