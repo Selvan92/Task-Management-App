@@ -8,7 +8,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-         target: 'https://eerie-skeleton-50764.herokuapp.com/',
+         target: 'https://task-management-backend-nkpf.onrender.com',
      
      },
    },
