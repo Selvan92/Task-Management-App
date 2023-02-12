@@ -8,9 +8,9 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-       //target: 'http://localhost:8000'
+      // target: 'http://localhost:8000'
 
-          target: 'https://api.render.com/deploy/srv-cfjgfipa6gductikhn50?key=i1Os90nhTZo',
+          target: 'https://task-management-backend-nkpf.onrender.com',
      
      },
    },
