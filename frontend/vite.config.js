@@ -8,22 +8,22 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-         // target: 'http://localhost:8000',
+          target: 'http://localhost:8000',
 
-          target: 'https://task-management-backend-nkpf.onrender.com',
+         // target: 'https://task-management-backend-nkpf.onrender.com',
      
      },
    },
   },
  
-    build: {
-      // generate manifest.json in outDir
-      manifest: true,
-      rollupOptions: {
-        // overwrite default .html entry
-        input: '/path/to/index.js',
-      },
-    },
+    // build: {
+    //   // generate manifest.json in outDir
+    //   manifest: true,
+    //   rollupOptions: {
+    //     // overwrite default .html entry
+    //     input: '/path/to/index.js',
+    //   },
+    // },
     
   
 });
