@@ -7,7 +7,7 @@ import App from './App';
 import './styles/global.scss';
 import getApiBaseUrl from './utils/getApiBaseUrl';
 
-axios.defaults.withCredentials = true;
+// axios.defaults.withCredentials = true;
 axios.defaults.baseURL = getApiBaseUrl();
 
 ReactDOM.createRoot(document.getElementById('root')).render(
