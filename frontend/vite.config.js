@@ -9,7 +9,7 @@ export default defineConfig({
     proxy: {
       '/api': {
 
-          target: 'https://task-management-backend-nkpf.onrender.com',
+          target: 'http://180.150.85.195:8000',
      
      },
    },
