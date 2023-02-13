@@ -41,6 +41,8 @@ app.options("*", function(req, res, next) {
   res.header("Access-Control-Allow-Credentials", "true");
   res.send();
 });
+
+
 app.use('/api', allRoutes);
 
 // error handler
