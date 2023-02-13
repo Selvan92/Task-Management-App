@@ -29,7 +29,8 @@ app.use(cookieParser());
 
 app.use(cors());
 app.use(cors({
-  origin: 'https://task-management-frontend-cg1s.onrender.com'
+  origin: 'https://task-management-frontend-cg1s.onrender.com',
+  credentials: true
 }));
 
 app.use('/api', allRoutes);
