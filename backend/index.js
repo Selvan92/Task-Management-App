@@ -19,7 +19,7 @@ const PORT = process.env.PORT || 8000;
 
 
 // middleware
-app.use(cors());
+
 app.use(morgan('tiny'));
 app.use(express.json());
 app.use(cookieParser());
