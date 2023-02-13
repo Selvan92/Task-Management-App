@@ -61,7 +61,7 @@ JWT_SECRET=generate_strong_random_characters_and_put_it_here
 
 5. Now copy paste the content for `.env` in `frontend/` folder. Please **replace** the proper values by yours:
 
-6.Comment out line 
+6.Comment out line 7,8,9,10 in /frontend/main.jsx to run local.
 
 
 6. Set the vite proxy to http://localhost:8000
