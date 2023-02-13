@@ -13,11 +13,7 @@ function Register() {
       password: e.target.password.value,
     };
     try {
-      axios.post('/api/auth/register', user, {
-        headers: {
-          'Content-Type': 'application/json',
-        },
-      });
+      await axios.post('/api/auth/register', user);
       toast.success('Registered successfully');
     } catch (err) {
       console.log(err);

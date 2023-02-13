@@ -8,6 +8,8 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
+
+       // target:'http://localhost:8000',
         
           target: 'https://task-management-frontend-cg1s.onrender.com',
      
