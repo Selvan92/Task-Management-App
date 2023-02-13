@@ -40,7 +40,9 @@ export const login = async (req, res, next) => {
     });
     return res
       .cookie('access_token', token, {
-        httpOnly: false,
+        httpsOnly: true,
+        httpOnly: true,
+
         
       })
       .status(200)
